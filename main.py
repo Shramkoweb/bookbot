@@ -6,8 +6,7 @@ def main():
     result = chars_dict_to_sorted(chars_dict)
 
     print(f"--- Begin report of {book_path} ---")
-    print(f"{words_amount} words found in the document")
-    print()
+    print(f"{words_amount} words found in the document\n")
 
     for item in result:
         if not item['char'].isalpha():
@@ -30,18 +29,13 @@ def sort_chars(d):
 
 
 def count_words(text):
-    words = text.split()
-    return len(words)
+    return len(text.split())
 
 
 def count_chars(text):
     chars = {}
-    for c in text:
-        lowered = c.lower()
-        if lowered in chars:
-            chars[lowered] += 1
-        else:
-            chars[lowered] = 1
+    for c in text.lower():
+        chars[c] = chars.get(c, 0) + 1
     return chars
 
 
