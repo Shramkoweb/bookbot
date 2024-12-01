@@ -4,6 +4,9 @@ This Python project analyzes a text file, providing a detailed report of the wor
 in the document. Designed to work with plain text files, it offers insights into text composition and can serve as a
 foundation for more advanced text analysis.
 
+[![asciicast](https://asciinema.org/a/Mf12iQsBgMs3KtShNDxeY2t4S.svg)](https://asciinema.org/a/TjcBPAFjy0bJzQLOGnfQ098tP)
+
+
 Features
 
 	•	Word Count: Calculates the total number of words in the document.
